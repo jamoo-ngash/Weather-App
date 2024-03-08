@@ -1,15 +1,21 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import { Button } from '@nextui-org/button'
+import './App.css'
+import {Button, ButtonGroup} from "@nextui-org/react";
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='bg-black w-screen h-screen text-white'>
-      Hello world
-      <Button>Press me</Button>
-    </div>
+    <>
+    <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
+    <Button color="primary">
+      Button
+    </Button>
+    </>
   )
 }
 
